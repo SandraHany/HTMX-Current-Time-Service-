@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "uZuwqfwITlMLX8ca7x1iplTEMdPXys431uLbMCLcPDs=",
+  "Source": "DateTime",
+  "BasePath": "_content/DateTime",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DateTime\\wwwroot",
+      "Source": "DateTime",
+      "ContentRoot": "C:\\Users\\sandr\\source\\repos\\DateTime\\DateTime\\wwwroot\\",
+      "BasePath": "_content/DateTime",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\sandr\\source\\repos\\DateTime\\DateTime\\wwwroot\\index.html",
+      "SourceId": "DateTime",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sandr\\source\\repos\\DateTime\\DateTime\\wwwroot\\",
+      "BasePath": "_content/DateTime",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
