@@ -2,19 +2,19 @@
 <html>
 <head>
     <title>Current Date and Time</title>
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
 </head>
 <body>
-    <h2 id="datetime"></h2>
+    <h2 hx-get="/api/datetime" hx-swap="innerHTML" hx-trigger="load"></h2>
 
     <script>
-        async function getCurrentDateTime() {
-            try {
-                const response = await fetch('/api/datetime');
-                const data = await response.text();
-                document.getElementById('datetime').textContent = data;
-            } catch (error) {
-                console.error('Error:', error);
-            }
+        function getCurrentDateTime() {
+            const datetimeElement = document.querySelector('h2');
+
+            datetimeElement.addEventListener('htmx:afterSwap', function () {
+                const data = datetimeElement.innerHTML.trim();
+                datetimeElement.innerHTML = data;
+            });
         }
 
         getCurrentDateTime();
